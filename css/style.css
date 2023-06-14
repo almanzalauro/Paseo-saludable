@@ -57,5 +57,11 @@ body {
       display:none;
   }*/
 }
+.container .content .timer .controls {
+  margin-bottom: 15px;
+}
+.container .content .timer .controls button {
+  margin: 0 10px;
+}
 
 /*# sourceMappingURL=style.css.map */
