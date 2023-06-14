@@ -55,7 +55,14 @@ function updateCounter() {
 
 function togglePausePlayCounter() {
     isPaused = !isPaused;
-    btnPausePlay.innerHTML = isPaused ? "Reproducir" : "Pausa";
+    btnPausePlay.classList.toggle('fa-pause')
+    btnPausePlay.classList.remove('fa-play');
+
+    if(isPaused){
+        btnPausePlay.classList.toggle('fa-play');
+        
+    }
+
 }
 
 function resetCounter(){

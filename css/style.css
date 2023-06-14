@@ -10,27 +10,40 @@ body {
   justify-content: center; /* Centrar horizontalmente */
   align-items: center; /* Centrar verticalmente */
   height: 100vh; /* Ajustar la altura para centrar verticalmente */
+  min-width: 425px;
 }
 .container .content {
+  width: 50%;
   text-align: center; /* Centrar contenido horizontalmente */
 }
 .container .content .configuration {
-  background-color: aqua;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 .container .content .configuration #configuration-values {
-  width: 50%;
+  color: white;
+  margin-bottom: 10px;
+}
+.container .content .configuration #configuration-values p {
+  font-size: 20px;
+}
+.container .content .configuration #configuration-values input {
+  width: 30%;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 20px;
 }
 .container .content .timer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: red;
 }
 .container .content .timer .display {
   display: flex;
@@ -41,7 +54,6 @@ body {
   height: 200px;
   border-radius: 50%;
   margin: 20px 0;
-  background-color: blue;
   border: 3px solid white;
 }
 .container .content .timer .display .time {
@@ -52,16 +64,21 @@ body {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-color: rgb(83, 83, 83);
-  /*#separated{
-      display:none;
-  }*/
 }
 .container .content .timer .controls {
   margin-bottom: 15px;
 }
-.container .content .timer .controls button {
+.container .content .timer .controls i {
+  cursor: pointer;
+  font-size: 30px;
   margin: 0 10px;
+  color: white;
+}
+.container .content .footer {
+  margin-top: 100px;
+}
+.container .content .footer p {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
