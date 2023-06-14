@@ -1,8 +1,14 @@
+$color-text: black;
+$color-border-line:black;
 body{    
     padding:0;
     margin:0;
+    min-height: 100vh;
     box-sizing: border-box;
-    background-color: rgb(77, 31, 77);
+    background:url("../img/bgd.jpg") no-repeat center center fixed;
+    /*background-position: center center;
+    background-attachment: fixed;*/
+    background-size: cover;
 }
 
 .container {
@@ -23,9 +29,10 @@ body{
             align-items: center;
             justify-content: center;
             #configuration-values{
-                color:white;
+                color:$color-text;
                 margin-bottom: 10px;
                 p{
+                    font-weight: bold;
                     font-size: 20px;
                 }
                 input{
@@ -34,8 +41,8 @@ body{
                     background: none;
                     outline: none;
                     border: none;
-                    border-bottom: 1px solid white;
-                    color:white;
+                    border-bottom: 1px solid $color-border-line;
+                    color:$color-text;
                     font-size: 20px;
                 }
             }
@@ -57,12 +64,12 @@ body{
                 border-radius: 50%;
                 margin: 20px 0;
                 //background-color: blue;
-                border: 3px solid white;
+                border: 3px solid $color-border-line;
                 .time{
                     justify-content: center;
                     display:flex;
                     font-size: 60px;
-                    color: white;
+                    color: $color-text;
                     width: 200px;
                     height: 200px;
                     border-radius: 50%;
@@ -75,7 +82,7 @@ body{
                     cursor: pointer;
                     font-size: 30px;
                     margin:0 10px;
-                    color:white;
+                    color:$color-text;
                 }
             }
         }
@@ -83,7 +90,8 @@ body{
         .footer{
             margin-top:100px;
             p{
-                color:white;
+                font-weight: bold;
+                color:$color-text;
             }
         }
     }    
