@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Paseo perruno</title>
+  </head>
+  <body>
+    <div class="container">
+      
+      <div class="content">
+        
+        <div class="configuration">
+          <div id="configuration-values"><p>Minuto inicial</p><input type="text" id="initial-minute" /></div>
+          <div id="configuration-values"><p>Segundo inicial</p><input type="text" id="initial-second" /></div>
+        </div>
+
+        <div class="timer">
+          <div class="display">
+              <div class="time">
+                  <p id="minute">2</p>
+                  <p id="separated">:</p>
+                  <p id="second">4</p>
+              </div>
+          </div>
+
+          <div class="controls">
+            <button type="submit" id="btn-start">Start</button>
+            <button type="submit" id="btn-pause">Pause</button>
+            <button type="submit" id="btn-reset">Reset</button>
+          </div>
+        </div>
+
+        <div class="footer">
+          <p>Created by Lauro Almanza</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
